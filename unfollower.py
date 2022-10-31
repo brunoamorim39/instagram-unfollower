@@ -11,7 +11,6 @@ headers = {'User-Agent': user_agent_desktop}
 def get_login():
     with open('config.json') as config:
         config_data = json.load(config)
-    
     return config_data
 
 def log_in(driver, login_info):
